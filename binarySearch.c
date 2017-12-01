@@ -3,6 +3,12 @@
 
 int binarySearch(int*, int, int, int); 
 
+
+//This program takes in a list of integers
+//The first element in the list is the integer to be searched for
+//The rest of the elements must be a sorted list of integers in which to search
+//If the element is found within the list the index where it is found will be printed
+//If the element is not found a message saying so will be printed 
 int main(int argc, char* argv[]){
 
 	if(argc > 2){
@@ -34,7 +40,7 @@ int main(int argc, char* argv[]){
 
 }
 
-//Returns the index of the element in the sorted list list
+//A binary search is used to return the index of the element in the sorted list list
 //If element doesn't exist in list then returns -1
 int binarySearch(int* list, int element, int left, int right){
 
